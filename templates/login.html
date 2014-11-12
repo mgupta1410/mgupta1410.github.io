@@ -17,9 +17,11 @@ document.getElementById('hide_login').style.display = "";
   <form action="" method=post>
     {% if error %}<p class=error><strong>Error:</strong> {{ error }}</p>{% endif %}
 
+ 	 <div style="width: 300px">
  	 <button class="btn btn-block btn-social btn-google-plus" >
-      	<i class="fa fa-google-plus fa-3x"></i> Sign in with Google
+      	<i class="fa fa-google-plus fa-3x" ></i> Sign in with Google
      </button>
+     </div>
 
 
       <input type=hidden name=next value="{{ next }}">
