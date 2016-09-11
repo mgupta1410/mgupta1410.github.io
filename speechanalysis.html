@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Narendra Modi's speeches</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./static/css/blog-post.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-12">
+
+                <!-- Blog Post -->
+                <!-- Title -->
+                <!-- Author -->
+                <h1>Analysis of Mr. Narendra Modi's speeches</h1>
+                <p class="lead"> by <a href="#">Mansi Gupta</a></p>
+                <p class="lead">The speeches by prominent leaders are often a reflection of the current Government's vision, plans and progress. This work is about analyzing the speeches of incumbent Prime Minister of India, Mr Narendra Modi. Although, Mr. Modi's speeches are individually analyzed by media houses and political pundits, an aggregated overview is also important. To answer questions like - how frequent are the speeches? How do the national and international issues addressed evolve over time? What are the factors that make a speech popular? To answer such questions, we need to mine statistical, structural as well as textual characteristics. This post is merely a start in the direction. </p>
+                <hr>
+                <p> The Indian Prime Minister delivers a unique charm with his words. Never before in the history of India, a Prime Minister’s routine international visits garnered so much media scrutiny and public attention. PM Modi’s speech at joint session of US Congress on 8 June 2016 was the most trending topic on social media. Mr Modi understands his audience well and establishes a rapport with them by drawing parallels. He uses humor as an effective tool. In a speech in US, Mr Modi satired that more Americans <i>“bend to yoga than throw a curveball”.</i> As the political analyst, Mr. Pushpesh Pant, notes <i>“A good political speech should have an emotional charge, it should have credibility and a subtle sense of humor woven into it”</i></p>
+
+                <h2>Statistical analysis</h2>
+                <hr>
+                <h3>Data</h3>
+                <p>It has been two years that Narendra Modi has held the Prime Minister’s office. Full text of around 470 of his speeches is provided on his official website - www.narendramodi.in. We use the date, country of speech and title for our analysis. As of September 2016, Mr Modi has made 52 foreign trips to 43 countries. He has delivered more than 150 speeches abroad.<p>
+
+                <iframe frameborder="0" height="500" width="600" scrolling="no" src="https://plot.ly/~mgupta1410/6.embed"></iframe>
+                <p>Here is the breakdown of speeches across months - </p>
+                <img class="img-responsive" src="./static/resources/monthwise_distribution.png" alt="" style="height="500"; width="600"">
+                <p>The peaks and lows are not correlated with any one important event. For example, the peak in November 2015 is due to PM speaking at different summits, like G20, BRICS, ASEAN, COP21, speeches in Bihar preceeding the Bihar elections and speeches made during the visit to UK and South East Asia.</p>
+                <hr>
+
+                <h3>Google Trends</h3>
+                <h4> Worldwide interest over time for the terms "Narendra Modi Speech" and "Modi Speech" </h4>
+                <p> From Jan 2014 to September 2016 </p>
+                </br>
+                <div class="col-md-12">
+                  <img class="img-responsive" src="./static/resources/google_trends.png" alt="" height="400" width="800">
+                  </br></br>
+                  <p> Almost all the peaks in the graph can be traced to some popular speech or visit to an international country. After all the three Independence Day speeches, the searches expecetdly see a spike. So is the case during three out of four US visits. </p>
+                </br></br>
+
+                <h4>Regional interest by country</h4>
+                </div>
+                <div class="col-md-12">
+                  <img class="img-responsive" src="./static/resources/regional_interest.png" alt="" height="400" width="600">
+                  <p>Source - <a href="https://www.google.co.in/trends/explore?date=2014-01-01%202016-09-09&q=modi%20speech,speech%20narendra%20modi,narendra%20modi%20speech">Google Trends</a></p>
+
+                <p> The highlighted countries are those where people search most for Narendra Modi's speeches. India would obviously be there. Also, the fact that countries like UK, USA, Canada and UAE made it into the list are no surprise. These are the countries where Modi has visited at least once and a huge population of Non-Residents Indians reside here. A country that is unexpected is a South American country, Bolivia. Imagine Bolivian people search for Narendra Modi's speeches even more than our neighbours. This is a mystery open to solve.
+                </p>
+                <hr>
+                </div>
+
+                </br></br>
+                <h2>Textual analysis</h2>
+                <hr>
+                <h3>Data</h3>
+                <p> We analyze text of 175 of Mr Modi's speeches.The data includes speeches delivered on visits outside India, delivered during the occassions of state visits of foreign leaders in India, delivered when addressing key summits BRICS, G20, ASEAN etc, given while addressing business forums, scientists, etc in different events and conferences. When addressing general Indian populace, Mr Modi prefers to speak in hindi. Although, for some key speeches, like those on India's Independence Day and in a radio show called 'Mann Ki Baat', hindi to english translation is readily available by official sources. However, the key speeches delivered in the parliament, given during the election campaigns, given while addressing the Indian diaspora abroad, etc. could not be covered due to lack of promising translation available. Hence, many key policies that are stressed upon during these speeches, which are directly related to common Indian, are not covered in this analysis.<p>
+                <h3>Overview</h3>
+                <row>
+                <div class="col-md-12">
+                  <div class="col-md-6">
+                  <img class="img-responsive" src="./static/resources/wordcloud_lem.png" alt="" height="400" width="600">
+                  </div>
+                  <div class="col-md-6">
+                    <img class="img-responsive" src="./static/resources/word_frequency.png" alt="" height="400" width="600">
+                  </div>
+               </div>
+             </row>
+             <p>Apart from the obvious terms like ‘nation’, ‘country’, ‘people’, ‘government’, it can be clearly seen the emphasis given by Mr Modi on ‘development’, ‘economy', ‘investment', ‘global', ‘infrastructure', ‘business', ‘village', ‘health', ‘education', ‘energy', ‘security', ‘partnership', ‘technology’ and ‘growth’.</p>
+              <p>Note that the term-frequency graph on the right, approximately follows <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipf's Law</a> </p>
+             <h3>Lexical Diversity</h3>
+             <p> Lexical Diversity is a measure of diversity of content in a document. It is a number between 0 and 1, from least to maximum diversity. It is calculated by dividing number of unique significant terms in a article by all significant terms in an article.</p>
+              <img class="img-responsive" src="./static/resources/ld_india_inter.png" alt="" height="400" width="600">
+              <p> Here, Lexical Diversity is aggregated over speeches given in India and abroad.</p>
+              <p> It can be noticed that percentage of International speeches increase as lexical diversity increases. This can be explained by the fact that PM Modi speaks mostly at a directed audience on a directed topic in India. For example, in a speech to the Science Congress in India, he mainly spoke about development of research in India. Internationally, he has to cover many important topics in his speeches. For instance, at the speech in US Congress PM Modi covered wide range of topics, from Democracy to Terrorism. </p>
+              <hr>
+            </div>
+            <h3>Topic Extraction</h3>
+            <p>To look at what topics are covered in Modi's speech, we use a technique called "Latent Topic Dirichlet" or LDA over Modi's speeches. This technique helps as explore the obvious and latent topics across a corpus of documents.</p>
+            <iframe frameborder="0" height="1000" width="100%" scrolling="no" src="lda_doc_topics20.html#topic=1&lambda=0.21&term="></iframe>
+            <h4>Understanding the visualization</h4>
+            <p> On the left, the circles represent topics. The radius of the circle is representative of extent of the topic in the document set. On hovering over a topic, on the right side, the terms associated with those topics are displayed. On hovering over a particular term, the radius of topic-circles change to depict the most important topics related to the term. Also, the distance between the topic-circles is indicative of the relatedness of the topics.</p>
+            <p> For example, the topic#1 is related to relationship with Asia Pacific nations. Topic#9 is clearly related to indian economy. Topic#14 is clearly related to ayurveda and medicine.</p>
+            <hr>
+            <h2>Future Work</h2>
+            <hr>
+            <p>
+              <ul>
+                <li>Analysis on Mr Modi's Hindi speeches</li>
+                <li>Finding out the readability of the speeches</li>
+                <li>Mining humour and sarcasm</li>
+                <li>Comparing the style of speaking with speeches of other statesmen</li>
+                <li>Exploring other topic extraction techniques</li>
+                <li>Analyzing social media reactions after a speech</li>
+                <li>What makes a speech popular? Finding out the characteristics of the speech by how well it is received by the audience.  </li>
+
+              </ul>
+            </p>
+
+          </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
