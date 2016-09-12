@@ -16,9 +16,49 @@
 
     <!-- Custom CSS -->
     <link href="./static/css/blog-post.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/734_RC02/embed_loader.js"></script>
+    <script type="text/javascript">
+    </script>
+
+        <!-- Custom CSS -->
+    <link href="static/css/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
 
 </head>
 <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #2B3856">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse custom-font" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="cv.html">CV</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
     <!-- Page Content -->
     <div class="container">
         <div class="row">
@@ -43,8 +83,6 @@
                 <p>Here is the breakdown of speeches across months - </p>
                 <img class="img-responsive" src="./static/resources/monthwise_distribution.png" alt="" style="height="500"; width="600"">
                 <p>The peaks and lows are not correlated with any one important event. For example, the peak in November 2015 is due to PM speaking at different summits, like G20, BRICS, ASEAN, COP21, speeches in Bihar preceeding the Bihar elections and speeches made during the visit to UK and South East Asia.</p>
-                <hr>
-
                 <h3>Google Trends</h3>
                 <h4> Worldwide interest over time for the terms "Narendra Modi Speech" and "Modi Speech" </h4>
                 <p> From Jan 2014 to September 2016 </p>
@@ -53,12 +91,26 @@
                   <img class="img-responsive" src="./static/resources/google_trends.png" alt="" height="400" width="800">
                   </br></br>
                   <p> Almost all the peaks in the graph can be traced to some popular speech or visit to an international country. After all the three Independence Day speeches, the searches expecetdly see a spike. So is the case during three out of four US visits. </p>
-                </br></br>
+                <br>
 
                 <h4>Regional interest by country</h4>
                 </div>
                 <div class="col-md-12">
-                  <img class="img-responsive" src="./static/resources/regional_interest.png" alt="" height="400" width="600">
+                  <div class = "row">
+                  <div class="col-md-6">
+
+                  <iframe src="http://www.google.com/trends/embed/explore/GEO_MAP_0?req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22modi%20speech%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222014-01-01%202016-09-09%22%7D%2C%7B%22keyword%22%3A%22speech%20narendra%20modi%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222014-01-01%202016-09-09%22%7D%2C%7B%22keyword%22%3A%22narendra%20modi%20speech%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222014-01-01%202016-09-09%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D&amp;tz=-330&amp;hl=enUS" width="600px" frameborder="0" scrolling="0" style="border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.117647) 0px 0px 2px 0px, rgba(0, 0, 0, 0.239216) 0px 2px 2px 0px; height: 384px;"></iframe>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5">
+                  <p><i>
+                    Values are calculated on a scale from 0 to 100, where 100 is the location with the most popularity as a fraction of total searches in that location, a value of 50 indicates a location which is half as popular, and a value of 0 indicates a location where the term was less than 1% as popular as the peak.<br>
+                    A higher value means a higher proportion of all queries, not a higher absolute query count. So a tiny country where 80% of the queries are for "bananas" will get twice the score of a giant country where only 40% of the queries are for "bananas".
+                  </i></p>
+                </div>
+              </div>
+
                   <p>Source - <a href="https://www.google.co.in/trends/explore?date=2014-01-01%202016-09-09&q=modi%20speech,speech%20narendra%20modi,narendra%20modi%20speech">Google Trends</a></p>
 
                 <p> The highlighted countries are those where people search most for Narendra Modi's speeches. India would obviously be there. Also, the fact that countries like UK, USA, Canada and UAE made it into the list are no surprise. These are the countries where Modi has visited at least once and a huge population of Non-Residents Indians reside here. A country that is unexpected is a South American country, Bolivia. Imagine Bolivian people search for Narendra Modi's speeches even more than our neighbours. This is a mystery open to solve.
@@ -67,37 +119,42 @@
                 </div>
 
                 </br></br>
+                <div class="col-md-12">
                 <h2>Textual analysis</h2>
                 <hr>
                 <h3>Data</h3>
                 <p> We analyze text of 175 of Mr Modi's speeches.The data includes speeches delivered on visits outside India, delivered during the occassions of state visits of foreign leaders in India, delivered when addressing key summits BRICS, G20, ASEAN etc, given while addressing business forums, scientists, etc in different events and conferences. When addressing general Indian populace, Mr Modi prefers to speak in hindi. Although, for some key speeches, like those on India's Independence Day and in a radio show called 'Mann Ki Baat', hindi to english translation is readily available by official sources. However, the key speeches delivered in the parliament, given during the election campaigns, given while addressing the Indian diaspora abroad, etc. could not be covered due to lack of promising translation available. Hence, many key policies that are stressed upon during these speeches, which are directly related to common Indian, are not covered in this analysis.<p>
                 <h3>Overview</h3>
+                <br>
                 <row>
-                <div class="col-md-12">
                   <div class="col-md-6">
                   <img class="img-responsive" src="./static/resources/wordcloud_lem.png" alt="" height="400" width="600">
+                  <br>
                   </div>
                   <div class="col-md-6">
                     <img class="img-responsive" src="./static/resources/word_frequency.png" alt="" height="400" width="600">
+                    <br>
                   </div>
-               </div>
              </row>
              <p>Apart from the obvious terms like ‘nation’, ‘country’, ‘people’, ‘government’, it can be clearly seen the emphasis given by Mr Modi on ‘development’, ‘economy', ‘investment', ‘global', ‘infrastructure', ‘business', ‘village', ‘health', ‘education', ‘energy', ‘security', ‘partnership', ‘technology’ and ‘growth’.</p>
               <p>Note that the term-frequency graph on the right, approximately follows <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipf's Law</a> </p>
+              </div>
+              <div class="col-md-12">
              <h3>Lexical Diversity</h3>
              <p> Lexical Diversity is a measure of diversity of content in a document. It is a number between 0 and 1, from least to maximum diversity. It is calculated by dividing number of unique significant terms in a article by all significant terms in an article.</p>
               <img class="img-responsive" src="./static/resources/ld_india_inter.png" alt="" height="400" width="600">
               <p> Here, Lexical Diversity is aggregated over speeches given in India and abroad.</p>
               <p> It can be noticed that percentage of International speeches increase as lexical diversity increases. This can be explained by the fact that PM Modi speaks mostly at a directed audience on a directed topic in India. For example, in a speech to the Science Congress in India, he mainly spoke about development of research in India. Internationally, he has to cover many important topics in his speeches. For instance, at the speech in US Congress PM Modi covered wide range of topics, from Democracy to Terrorism. </p>
-              <hr>
             </div>
+          <div class="col-md-12">
             <h3>Topic Extraction</h3>
             <p>To look at what topics are covered in Modi's speech, we use a technique called "Latent Topic Dirichlet" or LDA over Modi's speeches. This technique helps as explore the obvious and latent topics across a corpus of documents.</p>
-            <iframe frameborder="0" height="1000" width="100%" scrolling="no" src="lda_doc_topics20.html#topic=1&lambda=0.21&term="></iframe>
+            <iframe frameborder="0" height="800" width="100%" scrolling="no" src="lda_doc_topics20.html#topic=1&lambda=0.21&term="></iframe>
             <h4>Understanding the visualization</h4>
-            <p> On the left, the circles represent topics. The radius of the circle is representative of extent of the topic in the document set. On hovering over a topic, on the right side, the terms associated with those topics are displayed. On hovering over a particular term, the radius of topic-circles change to depict the most important topics related to the term. Also, the distance between the topic-circles is indicative of the relatedness of the topics.</p>
-            <p> For example, the topic#1 is related to relationship with Asia Pacific nations. Topic#9 is clearly related to indian economy. Topic#14 is clearly related to ayurveda and medicine.</p>
+            <p> On the left, the circles represent topics. The radius of the circle is representative of extent of the topic in the document set. On hovering over a topic, on the right side, the terms associated with those topics are displayed. On hovering over a particular term, the radius of topic-circles change to depict the most important topics related to the term. <br> Also, the distance between the topic-circles is indicative of the relatedness of the topics. In the model, the topics are represented as n-dimensional vector of terms. This n is of the order of vocabulary of the corpus. On the left, is the approximate visualization of topics in 2-dimension. <br>For example, the topic#1 is related to relationship with Asia Pacific nations. Topic#9 is clearly related to indian economy. Topic#14 is clearly related to ayurveda and medicine.</p>
             <hr>
+          </div>
+          <div class="col-md-12">
             <h2>Future Work</h2>
             <hr>
             <p>
@@ -109,13 +166,13 @@
                 <li>Exploring other topic extraction techniques</li>
                 <li>Analyzing social media reactions after a speech</li>
                 <li>What makes a speech popular? Finding out the characteristics of the speech by how well it is received by the audience.  </li>
-
               </ul>
             </p>
-
           </div>
+        </div>
         <!-- /.row -->
-
+      </div>
+      <hr>
     </div>
     <!-- /.container -->
 
