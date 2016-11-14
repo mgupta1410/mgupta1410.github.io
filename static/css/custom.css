@@ -9,6 +9,13 @@
   color: #2B3856
 }
 
+.custom-text-h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 13px;
+  color: #2B3856
+}
+
 .custom-font {
   font-family: 'Varela Round', sans-serif;
+  text-align: justify;
 }
