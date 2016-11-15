@@ -18,4 +18,11 @@
 .custom-font {
   font-family: 'Varela Round', sans-serif;
   text-align: justify;
+  color: #2B3856
+}
+
+.custom-font-c {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #2B3856
 }
