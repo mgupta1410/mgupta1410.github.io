@@ -1,155 +1,640 @@
-<html lang="en">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mansi Gupta</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-<head>
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-    <title>Mansi Gupta</title>
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-    <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/bootstrap-social.css" rel="stylesheet">
-    <link href="static/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-    <!-- Custom CSS -->
-    <link href="static/css/custom.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-</head>
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-<body>
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #2B3856">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse custom-font" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="cv_mansi_gupta_11_16.pdf">CV</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-4 col-xs-4">
-          </div>
-          <div class="col-lg-4 col-xs-4 text-center">
-              <h1 class="custom-text-h1">MANSI GUPTA</h1>
-              <h2 class="custom-text-h2">Applied Research Engineer, LinkedIn</h2>
-              <h2 class="custom-text-h3">B.E<i>(Hons.)</i>  Computer Science, BITS Pilani <i>(2011-2015)</i></h2>
-              <p class="custom-font-c"><a class="btn btn-social-icon btn-linkedin btn-xs" href="https://www.linkedin.com/in/mansiguptain" target="_blank"><span class="fa fa-linkedin"></span></a>
-                <a class="btn btn-social-icon btn-github btn-xs" href="https://www.github.com/mgupta1410" target="_blank"><span class="fa fa-github"></span></a>
-                mgupta1410[at]gmail[dot]com
-              </p>
-         </div>
-         <div class="col-lg-4 col-xs-4 text-center">
-           <img src="website_photo.JPG" alt="Mansi Gupta" style="width:120px;height:160px;">
-         </div>
-      </div>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
-      <div class="row">
-        <hr></hr>
-          <div class="col-lg-12 col-xs-12 custom-font">
-            <h4>Research Interests</h4>
-              <p>I am interested in the areas of <strong>Machine Learning</strong> and <strong>Natural Language Processing</strong> with the focus on addressing <strong>global social problems</strong>. My work has involved behavioral analysis and influence propagation on social network, recommendation systems and information retrieval on large corpora. I often wonder about ethical biases that creep in ML algorithms and how to make them more fair and interpretable. </p>
-              <hr></hr>
-            </div>
-          <div class="col-lg-12 col-xs-12 custom-font">
-            <div class="col-lg-6 col-xs-6" style="padding-left:0px;">
-              <h4>Spam and Relevance</h4>
-              <p>I currently solve research problems at LinkedIn as a part of their Spam and Relevance team at Bangalore, headed by <a href="https://in.linkedin.com/in/rushibhatt">Dr. Rushi Bhatt</a>. As a team, our objective is to throttle generation and spread of spam, unprofessional and low quality content on LinkedIn. We build Machine Learning based models to classify spam, predict virality and improve feed quality. I am currently working on a super interesting project aiming at quantifying tendency of LinkedIn members to spread low quality content on LinkedIn network.</p>
-            </div>
-            <div class="col-lg-6 col-xs-6" style="padding-right:0px;">
-              <h4>Search</h4>
-              <p>For more than a year, I worked in Information Retrieval domain at LinkedIn in their Search team. We used LinkedIn's search infrastructure, <a href="https://engineering.linkedin.com/search/did-you-mean-galene">Galene</a>, to build search on LinkedIn which millions of people use every day. I worked to build autosuggest and regular search on companies, universities, articles, Slideshare presentations and Lynda courses. I also pursued my undergraduate thesis in the same team where I worked on detecting near duplicate articles and demoting the duplicate elements in search.</p>
-            </div>
-            <div class="col-lg-12 col-xs-12 custom-font"><hr></hr></div>
-            <div class="col-lg-6 col-xs-6 custom-font" style="padding-left:0px;">
-              <h4>Papers</h4>
-              <p>Rishabh Mehrotra, Mansi Gupta (2016). Network-DPPs: Exploiting User's Network for Interest Prediction. Manuscript in preparation</p>
-            </div>
-            <div class="col-lg-6 col-xs-6 custom-font" style="padding-right:0px;">
-              <h4>Talks and Presentations</h4>
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
-                <div class="col-lg-2 col-xs-2 custom-font" style="padding:0px;">
-                <p>Dec 16</p>
-                </div>
-                <div class="col-lg-10 col-xs-10 custom-font" style="padding:0px;">
-                  <p>Upcoming talk on <b>&lsquo;Discovering negative influencers on LinkedIn&rsquo;</b> at <a href="http://ghcindia.anitaborg.org/" target="_blank">Grace Hopper Conference 2016</a>, Bangalore</p>
-                </div>
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
-                <div class="col-lg-2 col-xs-2 custom-font" style="padding:0px;">
-                <p>Oct 16</p>
-                </div>
-                <div class="col-lg-10 col-xs-10 custom-font" style="padding:0px;">
-                  <p>I spoke at IIT Gandhinagar on the topic <b>&lsquo;Deep Dive in Search Systems&rsquo;</b>  <a href="IIT_GN.pdf" target="_blank">[Slides]</a></p>
-                </div>
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-                <div class="col-lg-2 col-xs-2 custom-font" style="padding:0px;">
-                <p>Sep 16</p>
-                </div>
-                <div class="col-lg-10 col-xs-10 custom-font" style="padding:0px;">
-                  <p>I addressed five engineering colleges through webinar on <b>&lsquo;Basics of Search Systems&rsquo;</b> <a href="https://www.youtube.com/watch?v=a0z0umCTlAA" target="_blank">[Video]</a></p>
-                </div>
+mark {
+	background-color: transparent;
+}
 
-                <div class="col-lg-2 col-xs-2 custom-font" style="padding:0px;">
-                <p>Jan 16</p>
-                </div>
-                <div class="col-lg-10 col-xs-10 custom-font" style="padding:0px;">
-                  <p>I spoke at LinkedIn on search infrastructure, <b>Galene</b> <a href="GaleneTalkPublic.pdf" target="_blank">[Slides]</a></p>
-                </div>
+.indented {
+	padding-left: 1.5em;
+}
 
-            </div>
-          </div>
-      <div class="col-lg-12 col-xs-12 custom-font">
-        <hr></hr>
-        <h4>Some things about me</h4>
-          <p>I follow national and global affairs ardently. I read and philosophise in my free time. I think about what motivates people to do what they do, how I can contribute to make this world a better place, how stereotypes and biases creep in human behavior over the years, amongst other things.</p>
-          <p>Food for thought - <a href="http://www.goodreads.com/book/show/11468377-thinking-fast-and-slow"> Thinking Fast and Slow</a>, <a href="https://geekheresy.org/"> Geek Heresy</a>, <a href="https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning"> Man's Search For Meaning</a>, <a href="https://www.goodreads.com/book/show/13525945-so-good-they-can-t-ignore-you"> So Good That They Can't Ignore You</a></p>
-          <hr></hr>
-      </div>
-          <div class="col-lg-12 col-xs-12 custom-font">
-            <p style="text-align:right"> Visit my friend's webpage - <a href="http://danishpruthi.com" target="_blank">Danish Pruthi</a></p>
-          </div>
-          </div>
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
 
-    </div>
-    <!-- /.container -->
+img {
+	max-width: 100%;
+}
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+@page {
+	margin: 1in;
+}
 
-</body>
+.collection-content {
+	font-size: 0.875rem;
+}
 
-</html>
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="c06ca047-52b7-4b51-ba4d-67d1e3d15dca" class="page sans"><header><img class="page-cover-image" src="Mansi%20Gupta%20c06ca04752b74b51ba4d67d1e3d15dca/IMG_20200407_185155.jpg" style="object-position:center 50.41%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Mansi%20Gupta%20c06ca04752b74b51ba4d67d1e3d15dca/Screen_Shot_2020-09-20_at_2.21.37_AM.png"/></div><h1 class="page-title">Mansi Gupta</h1></header><div class="page-body"><p id="cf08ad40-4291-4e7f-a774-ec3e2c669a8d" class="block-color-blue"><a href="https://twitter.com/im_mansigupta">Twitter</a>  |  <a href="https://www.notion.so/Mansi-Gupta-c06ca04752b74b51ba4d67d1e3d15dca#14cbf644c764468e8a13e119f3cedc89">Blog - Latent Factors</a>  |  <a href="https://www.linkedin.com/in/mansiguptain/">LinkedIn</a>  |  <a href="https://github.com/mgupta1410/">Github</a>  |  <a href="https://scholar.google.com/citations?user=v9-IuzwAAAAJ&amp;hl=en">Google Scholar</a></p><p id="7fef98b9-9c3d-41bd-89b7-3811e8d45ba8" class="">
+</p><blockquote id="1165b5fb-c2ac-460f-ad3f-faacaacd1863" class="block-color-teal_background">Hello! I engineer <strong><mark class="highlight-teal">Machine Learning</mark></strong> and <strong><mark class="highlight-teal">Natural Language Processing</mark></strong> solutions to real world problems. I also dabble in research — I am concerned about unearthing hidden biases in ML systems and strive towards making them fair and interpretable.
+
+My aspire to contribute my skills towards developing systems and policies for the next billion under-served population.
+
+I live in Pittsburgh PA, with my loving husband <mark class="highlight-teal"><a href="https://www.cs.cmu.edu/~ddanish/">Danish</a></mark><mark class="highlight-teal">,</mark> who is pursuing his PhD from CMU. </blockquote><h2 id="8b973126-ac65-4b59-8f02-a38f1d1295fa" class=""><mark class="highlight-teal">Current stint</mark></h2><h3 id="ae37410c-0335-4afe-8556-4b882a2dd00c" class="">Machine Learning Engineer @Twitter </h3><p id="fb3e84e2-aeb1-44e4-ba0f-4ba08bd6b3a7" class="">I work as a part of the <strong><mark class="highlight-teal">Trends and Event Detection</mark></strong> team where I write algorithms to surface trends and recent events on Twitter, rank them and contextualize them with meaningful information.</p><h2 id="76798acd-4ae3-4ef9-8b82-e525856ce7a5" class="block-color-teal">Research Papers</h2><h3 id="76567ef8-ab78-473e-9fd5-c329954e6321" class=""><a href="https://arxiv.org/abs/1909.07913">Learning to Deceive with Attention-Based Explanations</a></h3><p id="02004f12-7714-44ea-a183-5bd3a363954f" class="">Danish Pruthi, Mansi Gupta, Bhuwan Dhingra, Graham Neubig, and Zachary C. Lipton</p><h3 id="8c8027a9-265b-4e0c-977c-ee8895c96203" class=""><a href="https://arxiv.org/abs/1908.04364">AmazonQA: A Review-Based Question Answering Task</a></h3><p id="eb7af1e8-70d5-4a76-b815-6b165dd28d9a" class="">Mansi Gupta, Nitish Kulkarni, Raghuveer Chanda, Anirudha Rayasam, and Zachary C. Lipton</p><h2 id="9718e14f-6eda-4dce-a34a-dfd71589749a" class=""><mark class="highlight-teal">Recent stints</mark></h2><div id="3cb51b4f-01ba-4790-9019-4d97bef935fc" class="column-list"><div id="0102ed28-a458-462a-82a0-9fe6d6ea1ce4" style="width:46.66666666666669%" class="column"><h3 id="899dcb87-a828-4f28-873c-9dc142126b7a" class="">Machine Learning Engineer, Petuum</h3><p id="d8c1a19a-2d3c-4f5f-8179-873648875003" class="">I worked on delivering Machine Learning based solutions to extremely challenging problems on real world noisy datasets. Working in this startup, taught me a lot about how<em> not </em>to<em> </em>run a company.</p></div><div id="68248e72-2a96-4ff5-916b-3d98d9cae162" style="width:53.33333333333336%" class="column"><h3 id="29412278-a513-484d-8835-c03ef91ed209" class="">Machine Learning Algorithms Intern, LinkedIn</h3><p id="7a69bdcf-6ad5-4d7e-93f7-82a26870d981" class="">I worked on a part of Job Recommendation pipeline where I explored of a new classification technique based on Gaussian Processes and Generalised Linear Mixed Models. This internship taught me a lot about taking statistical models to production.</p></div></div><h2 id="4e13f35f-015d-43f3-a786-8ded0c632f45" class="block-color-teal">Education</h2><div id="41adb5f0-b60f-49a6-bcea-e55496946e0f" class="column-list"><div id="c0563c9c-1021-4e56-8d6d-7b77837f6953" style="width:52.941176470588246%" class="column"><h3 id="283c23be-53fe-4053-afa4-e8fd6b802732" class="">Carnegie Mellon University, Pittsburgh, PA</h3><p id="6d338850-d693-48e8-99ad-e1609659c9c4" class="">Master of Computational Data Science, Computer Science (2017-18)</p></div><div id="a37e4d31-dab5-4d05-ab55-837edcaa3ad7" style="width:47.05882352941177%" class="column"><h3 id="bb13c417-1fd6-489a-9f1d-a43dbaca7cff" class="">Birla Institute of Technology and Science, Pilani</h3><p id="1daf324b-10ac-4b7d-a7ff-b7221606cbe1" class="">Bachelor of Engineering Hons. Computer Science (2011-15)</p></div></div><h2 id="a9c395a3-cb51-420d-8dab-6c9117b18d8a" class="block-color-teal">Past stints</h2><h3 id="0783c571-acd3-4665-99fa-4502cdd8e7cb" class="">Applied Research Engineer, LinkedIn</h3><p id="47666b3b-53f7-42a4-934f-9a5e8fc25800" class="">I worked in Spam and Relevance team where I worked on modeling propensity of users to spread unprofessional content and analyzed community structure with respect to spread of low quality content on the user graph.</p><p id="24b7d606-55fd-467b-adf1-73b857cf07fc" class="">I also worked in the Search team on various projects like building autosuggest and regular search over companies, universities, articles, Slideshare presentations and Lynda courses.</p><p id="c61481e4-64af-4c81-b8d9-1c717ac91619" class="">
+</p><p id="422c2b17-23e4-45e8-9ab8-4acfa1212f0d" class="">
+</p><p id="37c75f6d-fe40-4772-a73d-c3ae024f7ed5" class="">
+</p><p id="6ee8d03e-b318-49b3-9e3c-c679e1cae6cf" class="">
+</p><p id="177e3c38-27a8-4fc8-a6e7-de8feb414ec0" class="">
+</p><p id="1c781762-bd4d-4c41-b8be-c8b045afb70b" class="">
+</p><p id="1019a837-d0ea-407e-9c52-b883818f0c83" class="">
+</p><p id="6bce411a-1489-445e-88ab-87369a7941a6" class="">
+</p></div></article></body></html>
