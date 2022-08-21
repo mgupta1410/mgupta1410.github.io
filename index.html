@@ -1,10 +1,5 @@
-<html>
-
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<title>Mansi Gupta</title>
-
-<style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mansi Gupta</title><style>
+/* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
 	-webkit-print-color-adjust: exact;
@@ -288,6 +283,29 @@ ol > li {
 	margin-right: 1em;
 }
 
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
 time {
 	opacity: 0.5;
 }
@@ -325,7 +343,7 @@ img.icon {
 	display: block;
 	object-fit: cover;
 	width: 100%;
-	height: 30vh;
+	max-height: 30vh;
 }
 
 .page-header-icon {
@@ -466,151 +484,169 @@ blockquote {
 	margin-top: 0.25em;
 }
 
-.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
 .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
-
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
-
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
-
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
-
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
 .highlight-default {
+	color: rgba(55, 53, 47, 1);
 }
 .highlight-gray {
-	color: rgb(155,154,151);
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
 }
 .highlight-brown {
-	color: rgb(100,71,58);
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
 }
 .highlight-orange {
-	color: rgb(217,115,13);
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
 }
 .highlight-yellow {
-	color: rgb(223,171,1);
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
 }
 .highlight-teal {
-	color: rgb(15,123,108);
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
 }
 .highlight-blue {
-	color: rgb(11,110,153);
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
 }
 .highlight-purple {
-	color: rgb(105,64,165);
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
 }
 .highlight-pink {
-	color: rgb(173,26,114);
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
 }
 .highlight-red {
-	color: rgb(224,62,62);
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
 }
 .highlight-gray_background {
-	background: rgb(235,236,237);
+	background: rgba(241, 241, 239, 1);
 }
 .highlight-brown_background {
-	background: rgb(233,229,227);
+	background: rgba(244, 238, 238, 1);
 }
 .highlight-orange_background {
-	background: rgb(250,235,221);
+	background: rgba(251, 236, 221, 1);
 }
 .highlight-yellow_background {
-	background: rgb(251,243,219);
+	background: rgba(251, 243, 219, 1);
 }
 .highlight-teal_background {
-	background: rgb(221,237,234);
+	background: rgba(237, 243, 236, 1);
 }
 .highlight-blue_background {
-	background: rgb(221,235,241);
+	background: rgba(231, 243, 248, 1);
 }
 .highlight-purple_background {
-	background: rgb(234,228,242);
+	background: rgba(244, 240, 247, 0.8);
 }
 .highlight-pink_background {
-	background: rgb(244,223,235);
+	background: rgba(249, 238, 243, 0.8);
 }
 .highlight-red_background {
-	background: rgb(251,228,228);
+	background: rgba(253, 235, 236, 1);
 }
 .block-color-default {
 	color: inherit;
 	fill: inherit;
 }
 .block-color-gray {
-	color: rgba(55, 53, 47, 0.6);
-	fill: rgba(55, 53, 47, 0.6);
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
 }
 .block-color-brown {
-	color: rgb(100,71,58);
-	fill: rgb(100,71,58);
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
 }
 .block-color-orange {
-	color: rgb(217,115,13);
-	fill: rgb(217,115,13);
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
 }
 .block-color-yellow {
-	color: rgb(223,171,1);
-	fill: rgb(223,171,1);
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
 }
 .block-color-teal {
-	color: rgb(15,123,108);
-	fill: rgb(15,123,108);
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
 }
 .block-color-blue {
-	color: rgb(11,110,153);
-	fill: rgb(11,110,153);
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
 }
 .block-color-purple {
-	color: rgb(105,64,165);
-	fill: rgb(105,64,165);
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
 }
 .block-color-pink {
-	color: rgb(173,26,114);
-	fill: rgb(173,26,114);
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
 }
 .block-color-red {
-	color: rgb(224,62,62);
-	fill: rgb(224,62,62);
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
 }
 .block-color-gray_background {
-	background: rgb(235,236,237);
+	background: rgba(241, 241, 239, 1);
 }
 .block-color-brown_background {
-	background: rgb(233,229,227);
+	background: rgba(244, 238, 238, 1);
 }
 .block-color-orange_background {
-	background: rgb(250,235,221);
+	background: rgba(251, 236, 221, 1);
 }
 .block-color-yellow_background {
-	background: rgb(251,243,219);
+	background: rgba(251, 243, 219, 1);
 }
 .block-color-teal_background {
-	background: rgb(221,237,234);
+	background: rgba(237, 243, 236, 1);
 }
 .block-color-blue_background {
-	background: rgb(221,235,241);
+	background: rgba(231, 243, 248, 1);
 }
 .block-color-purple_background {
-	background: rgb(234,228,242);
+	background: rgba(244, 240, 247, 0.8);
 }
 .block-color-pink_background {
-	background: rgb(244,223,235);
+	background: rgba(249, 238, 243, 0.8);
 }
 .block-color-red_background {
-	background: rgb(251,228,228);
+	background: rgba(253, 235, 236, 1);
 }
-.select-value-color-default { background-color: rgba(206,205,202,0.5); }
-.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
-.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
-.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
-.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
-.select-value-color-green { background-color: rgba(0,135,107,0.2); }
-.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
-.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
-.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
-.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
 
 .checkbox {
 	display: inline-flex;
@@ -630,44 +666,14 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style>
+</style></head><body><article id="c1f842e7-3046-4308-a407-2b301e80b8d4" class="page sans"><header><h1 class="page-title">Mansi Gupta</h1></header><div class="page-body"><p id="d0f48e9f-ff0d-4416-9b76-8763866b4a02" class="">Website |  LinkedIn  |  <span style="border-bottom:0.05em solid"><a href="https://scholar.google.com/citations?user=v9-IuzwAAAAJ&amp;hl=en">Google Scholar</a></span></p><p id="9da71416-f346-4e37-ab92-5f249c009c1f" class="">Software Engineer @ Google </p><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="91b84763-923b-45b5-9842-573cec8a93fe"><div style="font-size:1.5em"><span class="icon">👩🏾‍💻</span></div><div style="width:100%">Hello! I engineer <strong><mark class="highlight-teal">Machine Learning</mark></strong> and <strong><mark class="highlight-teal">Natural Language Processing</mark></strong> solutions to real world problems. I also dabble in research — I am concerned about unearthing hidden biases in ML systems and strive towards making them fair and interpretable.
 
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="vapple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="favicomatic/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
+My aspire to contribute my skills towards developing systems and policies for the next billion under-served population.
 
-
-
-</head>
-
-<body><article id="c06ca047-52b7-4b51-ba4d-67d1e3d15dca" class="page sans"><header><h1 class="page-title"></h1></header><div class="page-body"><div id="00096f5b-db19-40b3-a725-79058c1f8356" class="column-list"><div id="b32b0f05-22d4-4860-a5ff-5404bd0131e7" style="width:25%" class="column"><figure id="d9122c48-bcf6-4696-9686-25a37ab41757" class="image"><a href="Untitled%20d9122c48bcf64696968625a37ab41757/website_image.png"><img style="width:144px" src="Untitled%20d9122c48bcf64696968625a37ab41757/website_image.png"/></a></figure></div><div id="3084a10d-1b62-4df5-97fc-907942708a71" style="width:75%" class="column"><h1 id="e845602a-1466-415e-8cb3-bbc883031750" class="" style="text-align:center">Mansi Gupta</h1><h3 id="e2d3b5ca-fcf5-435f-9eae-9d30c0816e59" class="" style="text-align:center">Machine Learning Engineer @Twitter </h3><p id="b2f364d6-170b-41d8-8da5-28b9bc367789" class="block-color-blue" style="text-align:center"><a href="https://twitter.com/im_mansigupta">Twitter</a>  |  <a href="https://latentfactors.blog">Blog</a>  |  <a href="https://www.linkedin.com/in/mansiguptain/">LinkedIn</a>  |  <a href="https://github.com/mgupta1410/">Github</a>  |  <a href="https://scholar.google.com/citations?user=v9-IuzwAAAAJ&amp;hl=en">Google Scholar</a></p></div></div><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1165b5fb-c2ac-460f-ad3f-faacaacd1863"><div style="font-size:1.5em"><span class="icon">👩🏾‍💻</span></div><div style="width:100%">Hello! I engineer <strong><mark class="highlight-teal">Machine Learning</mark></strong> and <strong><mark class="highlight-teal">Natural Language Processing</mark></strong> solutions to real world problems. I also dabble in research — I am concerned about unearthing hidden biases in ML systems and strive towards making them fair and interpretable.
-
-I aspire to contribute my skills towards developing systems and policies for the next billion under-served population.
-</div></figure><p id="8b973126-ac65-4b59-8f02-a38f1d1295fa" class="">
-</p><h2 id="3827671b-c67b-4752-ae36-0c3e9e08d1d9" class=""><mark class="highlight-teal">Current stint</mark></h2><p id="fb3e84e2-aeb1-44e4-ba0f-4ba08bd6b3a7" class="">I work as a part of the <strong><mark class="highlight-teal">Trends and Event Detection</mark></strong> team at Twitter where I write algorithms to surface trends and recent events on Twitter, rank them and contextualize them with meaningful information.</p><h2 id="38c02187-07a5-4610-8da6-a6db9515b3cd" class="block-color-teal">Research Papers</h2><h3 id="76567ef8-ab78-473e-9fd5-c329954e6321" class=""><a href="https://arxiv.org/abs/1909.07913">Learning to Deceive with Attention-Based Explanations</a></h3><p id="02004f12-7714-44ea-a183-5bd3a363954f" class="">Danish Pruthi, Mansi Gupta, Bhuwan Dhingra, Graham Neubig, and Zachary C. Lipton</p><p id="5448e7d9-7a5e-4740-aaca-6391fe483a9a" class=""><em>Annual Conference of the Association for Computational Linguistics (ACL), 2020</em></p><h3 id="8c8027a9-265b-4e0c-977c-ee8895c96203" class=""><a href="https://arxiv.org/abs/1908.04364">AmazonQA: A Review-Based Question Answering Task</a></h3><p id="eb7af1e8-70d5-4a76-b815-6b165dd28d9a" class="">Mansi Gupta, Nitish Kulkarni, Raghuveer Chanda, Anirudha Rayasam, and Zachary C. Lipton</p><p id="11ae77ff-0fa3-4ba2-b724-d15a74a25ce6" class=""><em>International Joint Conference on Artificial Intelligence (IJCAI), 2019</em></p><p id="9718e14f-6eda-4dce-a34a-dfd71589749a" class="">
-</p><h2 id="f8429028-8280-47e8-a0f6-d5911e7e4332" class=""><mark class="highlight-teal">Recent stints</mark></h2><div id="3cb51b4f-01ba-4790-9019-4d97bef935fc" class="column-list"><div id="0102ed28-a458-462a-82a0-9fe6d6ea1ce4" style="width:46.66666666666669%" class="column"><h3 id="899dcb87-a828-4f28-873c-9dc142126b7a" class="">Machine Learning Engineer, Petuum</h3><p id="d8c1a19a-2d3c-4f5f-8179-873648875003" class="">I worked on delivering Machine Learning based solutions to extremely challenging problems on real world noisy datasets. Working in this startup, taught me a lot about how<em> not </em>to<em> </em>run a company.</p></div><div id="68248e72-2a96-4ff5-916b-3d98d9cae162" style="width:53.33333333333336%" class="column"><h3 id="29412278-a513-484d-8835-c03ef91ed209" class="">Machine Learning Algorithms Intern, LinkedIn</h3><p id="7a69bdcf-6ad5-4d7e-93f7-82a26870d981" class="">I worked on a part of Job Recommendation pipeline where I explored of a new classification technique based on Gaussian Processes and Generalised Linear Mixed Models. This internship taught me a lot about taking statistical models to production.</p></div></div><h2 id="4e13f35f-015d-43f3-a786-8ded0c632f45" class="block-color-teal">Education</h2><div id="41adb5f0-b60f-49a6-bcea-e55496946e0f" class="column-list"><div id="c0563c9c-1021-4e56-8d6d-7b77837f6953" style="width:52.941176470588246%" class="column"><h3 id="283c23be-53fe-4053-afa4-e8fd6b802732" class="">Carnegie Mellon University, Pittsburgh, PA</h3><p id="6d338850-d693-48e8-99ad-e1609659c9c4" class="">Master of Computational Data Science, Computer Science (2017-18)</p></div><div id="a37e4d31-dab5-4d05-ab55-837edcaa3ad7" style="width:47.05882352941177%" class="column"><h3 id="bb13c417-1fd6-489a-9f1d-a43dbaca7cff" class="">Birla Institute of Technology and Science, Pilani</h3><p id="1daf324b-10ac-4b7d-a7ff-b7221606cbe1" class="">Bachelor of Engineering Hons. Computer Science (2011-15)</p></div></div><h2 id="a9c395a3-cb51-420d-8dab-6c9117b18d8a" class="block-color-teal">Past stints</h2><h3 id="0783c571-acd3-4665-99fa-4502cdd8e7cb" class="">Applied Research Engineer, LinkedIn</h3><p id="47666b3b-53f7-42a4-934f-9a5e8fc25800" class="">I worked in Spam and Relevance team where I worked on modeling propensity of users to spread unprofessional content and analyzed community structure with respect to spread of low quality content on the user graph.</p><p id="24b7d606-55fd-467b-adf1-73b857cf07fc" class="">I also worked in the Search team on various projects like building autosuggest and regular search over companies, universities, articles, Slideshare presentations and Lynda courses.</p><p id="c61481e4-64af-4c81-b8d9-1c717ac91619" class="">
-</p><p id="422c2b17-23e4-45e8-9ab8-4acfa1212f0d" class="">
-</p><p id="37c75f6d-fe40-4772-a73d-c3ae024f7ed5" class="">
-</p><p id="6ee8d03e-b318-49b3-9e3c-c679e1cae6cf" class="">
-</p><p id="177e3c38-27a8-4fc8-a6e7-de8feb414ec0" class="">
-</p><p id="1c781762-bd4d-4c41-b8be-c8b045afb70b" class="">
-</p><p id="1019a837-d0ea-407e-9c52-b883818f0c83" class="">
-</p><p id="6bce411a-1489-445e-88ab-87369a7941a6" class="">
+I live in the Bay Area, with my loving husband <mark class="highlight-blue"><a href="https://www.cs.cmu.edu/~ddanish/">Danish</a></mark><mark class="highlight-blue">.</mark></div></figure><h2 id="a1055345-f7d6-456d-b264-16d16b088422" class=""><mark class="highlight-teal">Current stint</mark></h2><p id="63105ea9-418a-4d69-94a4-596c756877ae" class="">I work as a part of <strong><mark class="highlight-teal">Trust and Safety at YouTube</mark></strong> where my work is to make our abuse detection models fairer towards protected groups.</p><h2 id="45de88ad-ca6d-4c76-91c8-b362332f30cf" class="block-color-teal">Research Papers</h2><h3 id="7a7fecf1-a8e7-47db-a5d6-8c9c2064a327" class=""><a href="https://arxiv.org/abs/1909.07913">Learning to Deceive with Attention-Based Explanations</a></h3><p id="68c7f417-01c2-4d18-a108-24242791f5d3" class="">Danish Pruthi, Mansi Gupta, Bhuwan Dhingra, Graham Neubig, and Zachary C. Lipton</p><p id="d30cb777-ccba-47d9-aee6-23ae608c607e" class=""><em>Annual Conference of the Association for Computational Linguistics (ACL), 2020</em></p><h3 id="9b2b9902-f2a4-4b7d-b016-b4cfd237a2ce" class=""><a href="https://arxiv.org/abs/1908.04364">AmazonQA: A Review-Based Question Answering Task</a></h3><p id="442d3dfb-c03f-40c7-b90b-f3484e3b5012" class="">Mansi Gupta, Nitish Kulkarni, Raghuveer Chanda, Anirudha Rayasam, and Zachary C. Lipton</p><p id="0ff06cf2-f328-4b17-a2e5-84cc3e968496" class=""><em>International Joint Conference on Artificial Intelligence (IJCAI), 2019</em></p><h2 id="7dfe4bfb-93bc-4d3c-9490-968560c93e30" class=""><mark class="highlight-teal">Past stints</mark></h2><h3 id="9ef21b8c-e117-45c5-b83b-b334570478d3" class="">Machine Learning Engineer, Twitter</h3><p id="70a41538-75ef-44cb-9fc4-95b1799c878e" class="">I worked as a part of the <strong><mark class="highlight-teal">Trends and Event Detection</mark></strong> team where I wrote algorithms to surface trends and recent events on Twitter, rank them and contextualize them with meaningful information.</p><h3 id="b5b77479-0210-42ac-a8d2-858d2c89d776" class="">Machine Learning Engineer, Petuum</h3><p id="044a9e29-7551-4fbd-ab59-84ec74034ad6" class="">I worked on delivering Machine Learning based solutions to extremely challenging problems on real world noisy datasets. Working in this startup, taught me a lot about how<em> not </em>to<em> </em>run a company.</p><h3 id="6282808f-5120-474d-b5f0-8751ab12ede3" class="">Machine Learning Algorithms Intern, LinkedIn</h3><p id="1ff2b5a0-a208-415e-88e9-f63126758fb1" class="">I worked on a part of Job Recommendation pipeline where I explored of a new classification technique based on Gaussian Processes and Generalised Linear Mixed Models. This internship taught me a lot about taking statistical models to production.</p><h3 id="7eb5aded-f1e4-4b7b-809f-307eb89a5f01" class="">Applied Research Engineer, LinkedIn</h3><p id="a487fa17-52ab-4f28-9d34-3e438f92f5e8" class="">I worked in Spam and Relevance team where I worked on modeling propensity of users to spread unprofessional content and analyzed community structure with respect to spread of low quality content on the user graph.</p><p id="04a760e6-d141-41de-ba08-e23869bd784f" class="">I also worked in the Search team on various projects like building autosuggest and regular search over companies, universities, articles, Slideshare presentations and Lynda courses.</p><h2 id="53413fb2-ad08-4db2-b81c-38318fc0f695" class=""><mark class="highlight-teal">Education</mark></h2><p id="432a3da0-a3d0-4c0b-aac7-0d97a0b1b2f9" class="">
+</p><p id="662382c5-806a-4712-8b0a-fc2aee91eebb" class="">
+</p><p id="e05d9787-6971-4edf-9039-2c91f9e1bc9b" class="">
+</p><p id="3ed2ba15-eedc-4a55-b342-462ee82081e4" class="">
+</p><p id="c5f75c3e-cdb0-40af-8709-45320bce32c4" class="">
+</p><p id="63fc042e-0332-4cce-a6aa-1c0269dd1f29" class="">
 </p></div></article></body></html>
